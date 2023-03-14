@@ -19,5 +19,8 @@ echo "" > /var/log/notify.log
 #supervisorctl restart all;
 
 
+# https://raw.githubusercontent.com/dntbeshy/cloudit-pub/main/clean.sh
 
-
+# curl https://raw.githubusercontent.com/dntbeshy/cloudit-pub/main/clean.sh | bash ; history -c; history -w; 
+# 删除DB中的动态业务数据表
+# reboot 服务或整台主机
