@@ -4,7 +4,8 @@ rm -rf test_file;
 rm -rf graph_dot; 
 rm -rf bt*;
 rm -rf tt*
-rm -rf upload_tmp
+rm -rf upload_tmp/
+rm -rf files/bf_*
 rm -rf cloud_proj;
 rm -rf files/tf*;
 rm -rf files/bf*;
