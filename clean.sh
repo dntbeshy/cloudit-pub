@@ -2,10 +2,12 @@ cd /home/cloud/prod/bin/
 
 rm -rf test_file; 
 rm -rf graph_dot; 
-rm -rf bt167*;
+rm -rf bt*;
 rm -rf tt*
+rm -rf upload_tmp
 rm -rf cloud_proj;
 rm -rf files/tf*;
+rm -rf files/bf*;
 rm -rf files/up*;
 
 rm -rf /var/log/biz.log*
