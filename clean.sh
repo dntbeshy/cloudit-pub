@@ -10,6 +10,7 @@ rm -rf cloud_proj;
 rm -rf files/tf*;
 rm -rf files/bf*;
 rm -rf files/up*;
+rm -rf files/pt*;
 
 rm -rf /var/log/biz.log*
 
