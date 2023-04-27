@@ -12,6 +12,9 @@ cp /etc/fstab /etc/fstab.bak
 sed -i '/\sswap\s/s/^/#/' /etc/fstab
 cat /etc/fstab
 
+timedatectl set-timezone Asia/Shanghai
+
+
 sudo apt-get install -y docker.io=20.10.21-0ubuntu1~20.04.1 nmon
 systemctl start docker
 systemctl enable docker
