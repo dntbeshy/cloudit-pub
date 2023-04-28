@@ -31,5 +31,18 @@ sudo apt-mark hold kubelet kubeadm kubectl
 systemctl start kubelet
 systemctl enable kubelet
 
-# extra install
-apt  install -y docker-compose nmon
+# extra install & conf
+apt  install -y docker-compose nmon jq tree
+
+cat> /etc/docker/daemon.json << EOF
+{
+ "registry-mirrors": ["https://docker.nju.edu.cn/"],
+ "log-driver":"json-file",
+ "log-opts": {"max-size":"100m", "max-file":"3"},
+ "max-concurrent-downloads": 10,
+ "max-concurrent-uploads": 10
+}
+EOF
+systemctl daemon-reload
+systemctl restart docker
+docker info
