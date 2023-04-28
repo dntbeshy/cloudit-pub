@@ -14,8 +14,8 @@ cat /etc/fstab
 
 timedatectl set-timezone Asia/Shanghai
 
-
-sudo apt-get install -y docker.io=20.10.21-0ubuntu1~20.04.1 nmon
+# docker may not be necessary for k8s any more 
+sudo apt-get install -y docker.io=20.10.21-0ubuntu1~20.04.1
 systemctl start docker
 systemctl enable docker
 
@@ -31,3 +31,5 @@ sudo apt-mark hold kubelet kubeadm kubectl
 systemctl start kubelet
 systemctl enable kubelet
 
+# extra install
+apt  install -y docker-compose nmon
