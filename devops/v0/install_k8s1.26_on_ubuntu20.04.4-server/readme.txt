@@ -32,4 +32,5 @@ kubectl get nodes -o wide
 # 可以查看到
 kubectl get rs -A -o wide
 
-
+# 完全卸载 doker
+apt-get purge docker.io
