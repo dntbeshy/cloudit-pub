@@ -25,3 +25,11 @@ kubectl describe pod  istiod-dbf5ff64-mbnk5 -n istio-system
 NAME      STATUS   ROLES           AGE   VERSION
 cloud11   Ready    control-plane   17m   v1.27.1
 
+
+# 查看 node使用的容器引擎
+kubectl get nodes -o wide
+
+# 可以查看到
+kubectl get rs -A -o wide
+
+

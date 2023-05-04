@@ -36,7 +36,7 @@ systemctl start kubelet
 systemctl enable kubelet
 
 # extra install & conf
-apt  install -y nmon jq tree
+apt  install -y nmon jq tree net-tools
 # apt install -y docker-compose
 
 cat> /etc/docker/daemon.json << EOF
